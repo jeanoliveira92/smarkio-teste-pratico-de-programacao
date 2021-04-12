@@ -20,11 +20,12 @@ Desenvolver uma aplicação web em Node.js com banco de dados MySQL. A aplicaç�
 
 ## :rocket: Tecnologias
 
-[Node.js](https://nodejs.org/) 
-[Typescript](https://www.typescriptlang.org/)
-[HTML5](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
-[CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-[SCSS/SASS](https://sass-lang.com/)
+- [Node.js](https://nodejs.org/) 
+- [Typescript](https://www.typescriptlang.org/)
+- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
+- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [SCSS/SASS](https://sass-lang.com/)
+
 
 ## 🔖 Layout
 
