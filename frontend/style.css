@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background: #f8f8f8;
+}
+
+html,
+body,
+input,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 85%;
+  outline: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 40px 0;
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 40px 10px;
+    height: 100%;
+  }
+}
+
+.container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .container section {
+    margin-bottom: 50px;
+  }
+}
+
+.container section span {
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #363636;
+  margin-bottom: 16px;
+}
+
+.container section textarea {
+  height: 120px;
+  margin-bottom: 16px;
+  border: 1px solid #c3c3c3;
+}
+
+.container section button {
+  font-size: 1rem;
+  height: 36px;
+  font-weight: 600;
+  color: #363636;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container section button:active {
+  background: #c3c3c3;
+}
+
+.container section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.container section div p {
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  color: #818181;
+}
+
+.container section div button {
+  min-width: 75px;
+  height: 30px;
+  margin-left: 40px;
+}
+
+.container section:first-child {
+  border-right: 2px solid #cdcdcd;
+  padding-right: 100px;
+}
+
+@media screen and (max-width: 960px) {
+  .container section:first-child {
+    padding-right: 0;
+    border: 0;
+  }
+}
+
+.container section:last-child {
+  padding-left: 100px;
+}
+
+@media screen and (max-width: 960px) {
+  .container section:last-child {
+    padding-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

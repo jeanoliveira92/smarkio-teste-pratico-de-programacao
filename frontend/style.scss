@@ -1,0 +1,118 @@
+@import "partials/colors";
+
+@mixin responsive() {
+    @media screen and (max-width: 960px) {
+        @content;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: $bg-color;
+}
+
+html,
+body,
+input,
+button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 85%;
+    outline: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0;
+
+    @include responsive() {
+        flex-direction: column;
+        padding: 40px 10px;
+        height: 100%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        @include responsive() {
+            margin-bottom: 50px;
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: $txt-gray-dark;
+            margin-bottom: 16px;
+        }
+
+        textarea {
+            height: 120px;
+            margin-bottom: 16px;
+            border: 1px solid $txt-gray-light;
+        }
+
+        button {
+            font-size: 1rem;
+            height: 36px;
+            font-weight: 600;
+            color: $txt-gray-dark;
+            border: 1px solid $txt-gray-light;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:active {
+            background: $txt-gray-light;
+        }
+
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+
+            p{
+                font-size: 0.95rem;
+                line-height: 1.5rem;
+                color: $txt-gray;
+            }
+
+            button{
+                min-width: 75px;
+                height: 30px;
+                margin-left: 40px;
+            }
+        }
+    }
+
+    section:first-child {
+        border-right: 2px solid #cdcdcd;
+        padding-right: 100px;
+
+        @include responsive() {
+            padding-right: 0;
+            border: 0;
+        }
+    }
+
+    section:last-child {
+        padding-left: 100px;
+
+        @include responsive() {
+            padding-left: 0;
+        }
+        
+    }
+}
