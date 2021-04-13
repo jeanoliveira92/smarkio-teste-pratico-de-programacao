@@ -1,7 +1,8 @@
 @import "partials/colors";
+@import "partials/animations";
 
 @mixin responsive() {
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 1100px) {
         @content;
     }
 }
@@ -20,7 +21,8 @@ body {
 html,
 body,
 input,
-button {
+button,
+textarea {
     font-family: "Montserrat", sans-serif;
     font-size: 85%;
     outline: none;
@@ -41,10 +43,15 @@ button {
         height: 100%;
     }
 
+    .overlay {
+        display: none;
+    }
+
     section {
         display: flex;
         flex-direction: column;
         flex: 1;
+        padding-right: 20px;
 
         @include responsive() {
             margin-bottom: 50px;
@@ -61,6 +68,8 @@ button {
             height: 120px;
             margin-bottom: 16px;
             border: 1px solid $txt-gray-light;
+            font-size: 1rem;
+            padding: 10px 10px;
         }
 
         button {
@@ -77,19 +86,21 @@ button {
             background: $txt-gray-light;
         }
 
-        div{
+        div {
             display: flex;
             flex-direction: row;
             align-items: center;
             margin-bottom: 20px;
+            width: 100%;
+            justify-content: space-between;
 
-            p{
+            p {
                 font-size: 0.95rem;
                 line-height: 1.5rem;
                 color: $txt-gray;
             }
 
-            button{
+            button {
                 min-width: 75px;
                 height: 30px;
                 margin-left: 40px;
@@ -109,10 +120,65 @@ button {
 
     section:last-child {
         padding-left: 100px;
+        overflow-y: scroll;
+
+        /* TODO O SCROLL */
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 10px;
+
+            &:hover {
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        /* BARRA SCROLL */
+        &::-webkit-scrollbar-thumb {
+            background: $txt-gray-light;
+            border-radius: 10px;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+
+            &:hover {
+                background: $txt-gray;
+            }
+        }
 
         @include responsive() {
             padding-left: 0;
+            padding-right: 0;
+            overflow-y: visible;
         }
-        
+    }
+}
+
+.loading {
+    .overlay {
+        background: rgba(242, 243, 245, 0.8);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        svg {
+            width: 25vh;
+            height: auto;
+        }
+
+        span{
+            color: $speech-color;
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-style: italic;
+        }
     }
 }

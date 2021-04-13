@@ -1,0 +1,17 @@
+.overlay {
+    svg {
+        path,
+        circle {
+            animation: logo 2s ease infinite alternate;
+        }
+    }
+}
+
+@keyframes logo {
+    from {
+        fill: rgba(152, 85, 212, 0.4);
+    }
+    to {
+        fill: rgba(152, 85, 212, 1);
+    }
+}
