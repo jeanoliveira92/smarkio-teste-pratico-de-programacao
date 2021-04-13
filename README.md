@@ -9,7 +9,7 @@
 <p align="center">
     <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#clipboard-instrucoes">Instrucoes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#user-content-clipboard-instruções">Instrucoes</a>
 </p>
 
 <img alt="Interface" src="https://github.com/jeanoliveira92/smarkio-teste-pratico-de-programacao/blob/main/screenshot.png?raw=true" width="100%" align="center">
