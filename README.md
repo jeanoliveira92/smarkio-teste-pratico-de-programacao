@@ -64,7 +64,7 @@ serviceUrl =
 
 - Pronto! Todas as dependências foram instaladas. Basta executar  `yarn dev` para iniciar a API.
 
--------------
+----
 ### INTERFACE - FRONTEND
 
 - Abra o terminal e navegue até o diretorio "frontend". Execute `$ npm install` para instalar todas as dependencias.
