@@ -35,7 +35,7 @@ Desenvolver uma aplicação web em Node.js com banco de dados MySQL. A aplicaç�
 
 ## :clipboard: Instruções
 
-### API BACKEND
+### API - BACKEND
 
 - Abra o terminal e navegue até o diretorio "backend". Execute `$ npm install` para instalar todas as dependencias.
 - Após todas as dependencias serem instaladas, abra o arquivo `.env` e preencha com as respectivas informações.
@@ -63,3 +63,10 @@ serviceUrl =
  `yarn sequelize db:migrate`
 
 - Pronto! Todas as dependências foram instaladas. Basta executar  `yarn dev` para iniciar a API.
+
+
+### INTERFACE - FRONTEND
+
+- Abra o terminal e navegue até o diretorio "frontend". Execute `$ npm install` para instalar todas as dependencias.
+- Caso tenha alterado o endereço da API backend, navegue até  `frontend\src\services` a abra o arquivo  `api.ts`. Em  `export const apiAddr = "http://localhost:4000";`, coloque o novo endereço. 
+- Após todas as dependencias serem instaladas, Pronto! Basta executar  `yarn dev` para iniciar a interface frontend.
