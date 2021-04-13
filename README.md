@@ -35,8 +35,11 @@ Desenvolver uma aplicação web em Node.js com banco de dados MySQL. A aplicaç�
 <p align="center">
     <img alt="Interface" src="https://github.com/jeanoliveira92/smarkio-teste-pratico-de-programacao/blob/main/screenshot.png?raw=true" width="100%">
 </p>
+<p align="center">
+    <img alt="Interface" src="https://github.com/jeanoliveira92/smarkio-teste-pratico-de-programacao/blob/main/screenshot2.png?raw=true" width="100%">
+</p>
 
-## Instruções
+## :clipboard: Instruções
 
 ### API BACKEND
 
