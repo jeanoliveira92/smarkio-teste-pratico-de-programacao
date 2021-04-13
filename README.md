@@ -33,8 +33,32 @@ Desenvolver uma aplicação web em Node.js com banco de dados MySQL. A aplicaç�
     <img alt="Interface" src="https://github.com/jeanoliveira92/smarkio-teste-pratico-de-programacao/blob/main/screenshot.png?raw=true" width="100%">
 </p>
 
-## Instruções
+##Instruções
 
-yarn sequelize db:create
+###API BACKEND
 
-yarn sequelize db:migrate
+- Abra o terminal e navegue até o diretorio "backend". Execute `$ npm install` para instalar todas as dependencias.
+- Após todas as dependencias serem instaladas, abra o arquivo `.env` e preencha com as respectivas informações.
+
+    ## PORTA DA API
+    API_PORT = 4000
+
+    ## BANCO DE DADOS
+    BDHOST = 
+    BDUSERNAME = 
+    BDPASS = 
+    BD = 
+
+    ## IBM Text to Speech
+    apikey = 
+    serviceUrl = 
+
+- Depois das informações preenchidas, volte para o terminal e rode o codigo abaixo para criar o banco de dados
+
+ `yarn sequelize db:create`
+
+- Em seguida, execute o codigo abaixo para a criação das tabelas
+
+ `yarn sequelize db:migrate`
+
+- Pronto! Todas as dependências foram instaladas. Basta executar  `yarn dev` para iniciar a API.

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { GetServerSideProps } from 'next';
-import api from '../services/api';
+import api, { apiAddr } from '../services/api';
 
 interface Comment {
   id: number,
@@ -21,7 +21,7 @@ export default function Home() {
   const handlePronunciation = async (e) => {
 
     setLoader(true);
-    var audio = new Audio(`http://localhost:4000/pronunciation/${e.target.id}`);
+    var audio = new Audio(`${apiAddr}/pronunciation/${e.target.id}`);
 
     var playPromise = audio.play();
 
@@ -54,7 +54,7 @@ export default function Home() {
 
     const comments = await api.get('/comment');
     setComments(comments.data);
-    
+
     setLoader(false);
   }
 
