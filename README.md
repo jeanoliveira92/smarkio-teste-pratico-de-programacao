@@ -9,7 +9,11 @@
 <p align="center">
     <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#clipboard-instrucoes">Instrucoes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+<p align="center">
+    <img alt="Interface" src="https://github.com/jeanoliveira92/smarkio-teste-pratico-de-programacao/blob/main/screenshot.png?raw=true" width="100%">
 </p>
 
 ## 💻 Projeto
@@ -29,13 +33,6 @@ Desenvolver uma aplicação web em Node.js com banco de dados MySQL. A aplicaç�
 - [SCSS/SASS](https://sass-lang.com/)
 - [NextJS](https://nextjs.org/)
 
-
-## 🔖 Layout
-
-<p align="center">
-    <img alt="Interface" src="https://github.com/jeanoliveira92/smarkio-teste-pratico-de-programacao/blob/main/screenshot.png?raw=true" width="100%">
-    <img alt="Interface" src="https://github.com/jeanoliveira92/smarkio-teste-pratico-de-programacao/blob/main/screenshot2.png?raw=true" width="100%">
-</p>
 
 ## :clipboard: Instruções
 
