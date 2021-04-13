@@ -22,9 +22,12 @@ Desenvolver uma aplicação web em Node.js com banco de dados MySQL. A aplicaç�
 
 - [Node.js](https://nodejs.org/) 
 - [Typescript](https://www.typescriptlang.org/)
+- [Sequelize](https://sequelize.org/)
+- [Mysql](https://www.mysql.com/)
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [SCSS/SASS](https://sass-lang.com/)
+- [NextJS](https://nextjs.org/)
 
 
 ## 🔖 Layout
@@ -33,9 +36,9 @@ Desenvolver uma aplicação web em Node.js com banco de dados MySQL. A aplicaç�
     <img alt="Interface" src="https://github.com/jeanoliveira92/smarkio-teste-pratico-de-programacao/blob/main/screenshot.png?raw=true" width="100%">
 </p>
 
-##Instruções
+## Instruções
 
-###API BACKEND
+### API BACKEND
 
 - Abra o terminal e navegue até o diretorio "backend". Execute `$ npm install` para instalar todas as dependencias.
 - Após todas as dependencias serem instaladas, abra o arquivo `.env` e preencha com as respectivas informações.
