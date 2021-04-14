@@ -54,7 +54,7 @@ textarea {
         padding-right: 20px;
 
         @include responsive() {
-            margin-bottom: 50px;
+            padding: 0;
         }
 
         span {
@@ -115,10 +115,11 @@ textarea {
         @include responsive() {
             padding-right: 0;
             border: 0;
+            margin-bottom: 50px;
         }
     }
 
-    section:last-child {
+    section:nth-child(2) {
         padding-left: 100px;
         overflow-y: scroll;
 
