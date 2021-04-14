@@ -29,7 +29,7 @@ export async function index(req: Request, res: Response) {
     }
 }
 
-// RETORNA TODOS OS COMENTARIOS
+// RETORNA UM COMENTARIO POR ID - MIDDLEWARE
 export async function findComment(req: Request, res: Response, next: NextFunction) {
 
     try {

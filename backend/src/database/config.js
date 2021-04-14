@@ -2,8 +2,10 @@
 // por causa do sequelize-cli. Ele não aceita o default exports
 require('dotenv/config');
 
+// extrai as informações das variaveis de ambiente
 const { BDHOST, BDUSERNAME, BDPASS, BD } = process.env;
 
+// exporta as configurações
 module.exports = {
     dialect: 'mysql',
     host: BDHOST, 

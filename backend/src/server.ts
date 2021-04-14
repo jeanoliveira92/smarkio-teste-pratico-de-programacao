@@ -18,5 +18,6 @@ server.use(routes);
 
 // INICIALIZACAO DO SERVIDOR API
 server.listen(process.env.API_PORT, () => {
+    console.log(`[server] API Server started.`);
     console.log(`[server] API Server running - Port: ${process.env.API_PORT}`);
 });

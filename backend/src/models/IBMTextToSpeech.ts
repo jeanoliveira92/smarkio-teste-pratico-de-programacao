@@ -5,6 +5,7 @@ const fs = require("fs");
 import TextToSpeechV1 from 'ibm-watson/text-to-speech/v1';
 import { IamAuthenticator } from 'ibm-watson/auth';
 
+// inicia a conexão com o servidor speech da IBM
 const textToSpeech = new TextToSpeechV1({
   authenticator: new IamAuthenticator({
     apikey: process.env.apikey || "",
@@ -12,7 +13,9 @@ const textToSpeech = new TextToSpeechV1({
   serviceUrl: process.env.serviceUrl,
 });
 
+// envia o texto para o servidor da ibm e retorna o buffer de audio
 export async function getPronunciation(text: string) {
+  // parametros de conversão do texto para audio
   const synthesizeParams = {
     text: text,
     accept: 'audio/wav',
