@@ -23,6 +23,7 @@ Desenvolver uma aplicação web em Node.js com banco de dados MySQL. A aplicaç�
 ## :rocket: Tecnologias
 
 - [Node.js](https://nodejs.org/) 
+- [Expressjs](https://expressjs.com/pt-br/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Sequelize](https://sequelize.org/)
 - [Mysql](https://www.mysql.com/)
